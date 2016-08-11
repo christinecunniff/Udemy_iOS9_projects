@@ -54,8 +54,8 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="mUz-qt-Pcb">
-                                <rect key="frame" x="193" y="165" width="213" height="343"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="mUz-qt-Pcb">
+                                <rect key="frame" x="194" y="164" width="213" height="343"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="vg5-4t-5kw">
                                         <rect key="frame" x="0.0" y="0.0" width="213" height="63"/>
@@ -204,10 +204,13 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3F-WY-vPv">
-                                <rect key="frame" x="458" y="47" width="122" height="28"/>
-                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4556" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3F-WY-vPv">
+                                <rect key="frame" x="219" y="97" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="04j-N2-d7Y"/>
+                                    <constraint firstAttribute="height" constant="40" id="HRs-jh-hdE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="32"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -216,10 +219,12 @@
                             <constraint firstItem="mUz-qt-Pcb" firstAttribute="centerX" secondItem="FKw-vj-mHe" secondAttribute="centerX" id="1LS-SB-fIt"/>
                             <constraint firstItem="ykE-Ge-DMj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8Co-Hm-urO"/>
                             <constraint firstItem="FKw-vj-mHe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9AD-YB-WhA"/>
+                            <constraint firstItem="J3F-WY-vPv" firstAttribute="top" secondItem="FKw-vj-mHe" secondAttribute="top" constant="18" id="F8W-DC-dqa"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vV5-P1-0A4" secondAttribute="bottom" id="PJb-ph-DU8"/>
                             <constraint firstItem="FKw-vj-mHe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QvW-Qn-cRZ"/>
                             <constraint firstItem="mUz-qt-Pcb" firstAttribute="centerY" secondItem="FKw-vj-mHe" secondAttribute="centerY" constant="35" id="RAP-58-7tq"/>
                             <constraint firstItem="vV5-P1-0A4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="TM4-7D-edN"/>
+                            <constraint firstItem="FKw-vj-mHe" firstAttribute="trailing" secondItem="J3F-WY-vPv" secondAttribute="trailing" constant="10" id="m0C-Yy-ELR"/>
                             <constraint firstAttribute="trailing" secondItem="ykE-Ge-DMj" secondAttribute="trailing" id="nDm-u3-Zys"/>
                             <constraint firstItem="vV5-P1-0A4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oLL-sv-nDc"/>
                             <constraint firstAttribute="trailing" secondItem="vV5-P1-0A4" secondAttribute="trailing" id="w2Y-bO-VSo"/>
