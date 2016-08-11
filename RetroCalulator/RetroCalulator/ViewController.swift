@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     }
 
     @IBOutlet weak var outputLabel: UILabel!
+    @IBOutlet weak var clearBtn: UIButton!
     
     var btnSound: AVAudioPlayer!
     var runningNumber = ""
@@ -67,6 +68,15 @@ class ViewController: UIViewController {
     
     @IBAction func onEqualsPressed(sender: AnyObject) {
         processOperation(currentOperation)
+    }
+    
+    @IBAction func onClearPressed(sender: AnyObject) {
+        runningNumber = ""
+        leftValStr = ""
+        rightValStr = ""
+        currentOperation = Operation.Empty
+        result = ""
+        outputLabel.text = "0"
     }
     
     func processOperation(op: Operation) {
