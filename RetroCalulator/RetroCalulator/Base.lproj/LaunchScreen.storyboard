@@ -20,19 +20,34 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchbg" translatesAutoresizingMaskIntoConstraints="NO" id="ybe-m2-2fo">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Retro-Calc" translatesAutoresizingMaskIntoConstraints="NO" id="fWR-Sh-gdJ">
-                                <rect key="frame" x="73" y="28" width="454" height="101"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="robot" translatesAutoresizingMaskIntoConstraints="NO" id="ON1-5Z-VCL">
-                                <rect key="frame" x="180" y="164" width="240" height="128"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="n6c-Kd-TrN">
+                                <rect key="frame" x="125" y="70" width="350" height="249"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Retro-Calc" translatesAutoresizingMaskIntoConstraints="NO" id="fWR-Sh-gdJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="101"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="EdX-qt-rEX"/>
+                                            <constraint firstAttribute="height" constant="101" id="gyH-LG-PPm"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robot" translatesAutoresizingMaskIntoConstraints="NO" id="ON1-5Z-VCL">
+                                        <rect key="frame" x="55" y="121" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="3Rj-pO-WSy"/>
+                                            <constraint firstAttribute="width" constant="240" id="r7P-d1-e3z"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="n6c-Kd-TrN" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="FMc-Zw-rZT"/>
                             <constraint firstItem="ybe-m2-2fo" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="OjE-zH-IRG"/>
                             <constraint firstItem="ybe-m2-2fo" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="cTL-bZ-zaZ"/>
                             <constraint firstAttribute="trailing" secondItem="ybe-m2-2fo" secondAttribute="trailing" id="dgB-kZ-F7y"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="ybe-m2-2fo" secondAttribute="bottom" id="hYf-nT-Mv6"/>
+                            <constraint firstItem="n6c-Kd-TrN" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="50" id="wVR-T2-krb"/>
                         </constraints>
                     </view>
                 </viewController>
