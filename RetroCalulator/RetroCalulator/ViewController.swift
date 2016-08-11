@@ -44,23 +44,47 @@ class ViewController: UIViewController {
     }
 
     @IBAction func numberPressed(btn: UIButton!) {
-        btnSound.play()
+        playSound()
+        runningNumber += "\(btn.tag)"
+        outputLabel.text = runningNumber
     }
     
     @IBAction func onDividePressed(sender: AnyObject) {
+        processOperation(Operation.Divide)
     }
     
     @IBAction func onMultiplyPressed(sender: AnyObject) {
+        processOperation(Operation.Multiply)
     }
 
     @IBAction func onSubtractPressed(sender: AnyObject) {
+        processOperation(Operation.Subtract)
     }
 
     @IBAction func onAddPressed(sender: AnyObject) {
+        processOperation(Operation.Add)
     }
     
     @IBAction func onEqualsPressed(sender: AnyObject) {
+        processOperation(Operation.Equals)
     }
     
+    func processOperation(op: Operation) {
+        playSound()
+        
+        if currentOperation != Operation.Empty {
+            // run some math
+        } else {
+            // this is the FIRST time an operator has been pressed
+        }
+    }
+    
+    func playSound() {
+        if btnSound.playing {
+            btnSound.stop()
+        }
+        
+        btnSound.play()
+    }
 }
 
