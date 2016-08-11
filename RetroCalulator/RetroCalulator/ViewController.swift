@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         
         do {
             try btnSound = AVAudioPlayer(contentsOfURL: soundURL)
+            btnSound.prepareToPlay()
         } catch let error as NSError {
             print(error.debugDescription)
         }
@@ -30,7 +31,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func numberPressed(btn: UIButton!) {
-    
+        btnSound.play()
     }
 
 
