@@ -12,6 +12,7 @@
 		EF86AD8C1D5E06E900D76170 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF86AD8A1D5E06E900D76170 /* Main.storyboard */; };
 		EF86AD8E1D5E06E900D76170 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF86AD8D1D5E06E900D76170 /* Assets.xcassets */; };
 		EF86AD911D5E06E900D76170 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF86AD8F1D5E06E900D76170 /* LaunchScreen.storyboard */; };
+		EF86AD991D5E07D400D76170 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF86AD981D5E07D400D76170 /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		EF86AD8D1D5E06E900D76170 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF86AD901D5E06E900D76170 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF86AD921D5E06E900D76170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF86AD981D5E07D400D76170 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				EF86AD861D5E06E900D76170 /* AppDelegate.swift */,
+				EF86AD981D5E07D400D76170 /* Character.swift */,
 				EF86AD881D5E06E900D76170 /* ViewController.swift */,
 				EF86AD8A1D5E06E900D76170 /* Main.storyboard */,
 				EF86AD8D1D5E06E900D76170 /* Assets.xcassets */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF86AD991D5E07D400D76170 /* Character.swift in Sources */,
 				EF86AD891D5E06E900D76170 /* ViewController.swift in Sources */,
 				EF86AD871D5E06E900D76170 /* AppDelegate.swift in Sources */,
 			);
