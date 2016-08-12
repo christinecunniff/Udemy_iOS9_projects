@@ -13,6 +13,9 @@
 		EF86AD8E1D5E06E900D76170 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF86AD8D1D5E06E900D76170 /* Assets.xcassets */; };
 		EF86AD911D5E06E900D76170 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF86AD8F1D5E06E900D76170 /* LaunchScreen.storyboard */; };
 		EF86AD991D5E07D400D76170 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF86AD981D5E07D400D76170 /* Character.swift */; };
+		EF86AD9B1D5E0A7E00D76170 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF86AD9A1D5E0A7E00D76170 /* Player.swift */; };
+		EF86AD9E1D5E0CEB00D76170 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF86AD9D1D5E0CEB00D76170 /* Enemy.swift */; };
+		EF86ADA01D5E0E1100D76170 /* Kimara.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF86AD9F1D5E0E1100D76170 /* Kimara.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		EF86AD901D5E06E900D76170 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF86AD921D5E06E900D76170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF86AD981D5E07D400D76170 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		EF86AD9A1D5E0A7E00D76170 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		EF86AD9D1D5E0CEB00D76170 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		EF86AD9F1D5E0E1100D76170 /* Kimara.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kimara.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,26 @@
 		EF86AD851D5E06E900D76170 /* rpg-oop */ = {
 			isa = PBXGroup;
 			children = (
-				EF86AD861D5E06E900D76170 /* AppDelegate.swift */,
-				EF86AD981D5E07D400D76170 /* Character.swift */,
-				EF86AD881D5E06E900D76170 /* ViewController.swift */,
+				EF86AD9C1D5E0A9000D76170 /* ViewControllers */,
 				EF86AD8A1D5E06E900D76170 /* Main.storyboard */,
 				EF86AD8D1D5E06E900D76170 /* Assets.xcassets */,
 				EF86AD8F1D5E06E900D76170 /* LaunchScreen.storyboard */,
 				EF86AD921D5E06E900D76170 /* Info.plist */,
 			);
 			path = "rpg-oop";
+			sourceTree = "<group>";
+		};
+		EF86AD9C1D5E0A9000D76170 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF86AD861D5E06E900D76170 /* AppDelegate.swift */,
+				EF86AD981D5E07D400D76170 /* Character.swift */,
+				EF86AD9D1D5E0CEB00D76170 /* Enemy.swift */,
+				EF86AD9A1D5E0A7E00D76170 /* Player.swift */,
+				EF86AD881D5E06E900D76170 /* ViewController.swift */,
+				EF86AD9F1D5E0E1100D76170 /* Kimara.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +156,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF86AD9B1D5E0A7E00D76170 /* Player.swift in Sources */,
+				EF86AD9E1D5E0CEB00D76170 /* Enemy.swift in Sources */,
+				EF86ADA01D5E0E1100D76170 /* Kimara.swift in Sources */,
 				EF86AD991D5E07D400D76170 /* Character.swift in Sources */,
 				EF86AD891D5E06E900D76170 /* ViewController.swift in Sources */,
 				EF86AD871D5E06E900D76170 /* AppDelegate.swift in Sources */,
