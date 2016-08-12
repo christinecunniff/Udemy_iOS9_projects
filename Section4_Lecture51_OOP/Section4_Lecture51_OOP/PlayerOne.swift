@@ -1,6 +1,6 @@
 import Foundation
 
-class Character {
+class PlayerOne {
 
     private var _hp: Int = 100
     private var _attackPower: Int = 10
