@@ -96,6 +96,9 @@
                                     <constraint firstAttribute="width" constant="138" id="sWm-fM-1qN"/>
                                 </constraints>
                                 <state key="normal" image="player1attackbtn"/>
+                                <connections>
+                                    <action selector="onPlayerOneAttack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yge-Nm-Ak3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0X-kj-yyJ">
                                 <rect key="frame" x="365" y="283" width="138" height="50"/>
@@ -104,6 +107,9 @@
                                     <constraint firstAttribute="width" constant="138" id="flG-Dv-c3o"/>
                                 </constraints>
                                 <state key="normal" image="player2attackbtn"/>
+                                <connections>
+                                    <action selector="onPlayerTwoAttack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3VL-8x-tt7"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATTACK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xro-aC-Dco" userLabel="pTwoAttack">
                                 <rect key="frame" x="86" y="297" width="104" height="21"/>
@@ -209,6 +215,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="winnerLabel" destination="H0m-qk-0AH" id="X0O-5f-rWL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

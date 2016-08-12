@@ -1,15 +1,25 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var winnerLabel: UILabel!
+    
+    var playerOne: PlayerOne!
+    var playerTwo: PlayerTwo!
+    var winnerMessage: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func onPlayerOneAttack(sender: AnyObject) {
+    
+    }
+    
+    @IBAction func onPlayerTwoAttack(sender: AnyObject) {
+    
     }
 
 
