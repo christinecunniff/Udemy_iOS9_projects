@@ -8,6 +8,7 @@
         <mutableArray key="Minecraft.ttf">
             <string>Minecraft</string>
             <string>Minecraft</string>
+            <string>Minecraft</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -104,27 +105,13 @@
                                 </constraints>
                                 <state key="normal" image="player2attackbtn"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="ATTACK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnH-8W-ig9">
-                                <rect key="frame" x="385" y="296" width="94" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATTACK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xro-aC-Dco">
+                                <rect key="frame" x="86" y="297" width="104" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="68" id="7EJ-rM-szR"/>
-                                    <constraint firstAttribute="height" constant="21" id="WsI-vg-7ZT"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="7EJ-rM-szR"/>
-                                        <exclude reference="WsI-vg-7ZT"/>
-                                    </mask>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="ATTACK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xro-aC-Dco">
-                                <rect key="frame" x="85" y="297" width="104" height="21"/>
-                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="7aK-QZ-ZAJ"/>
                                     <constraint firstAttribute="width" constant="68" id="Wdn-d8-NcN"/>
                                     <constraint firstAttribute="height" constant="21" id="ZBp-JR-B6o"/>
+                                    <constraint firstAttribute="width" constant="104" id="jtg-au-T4J"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -133,6 +120,30 @@
                                     <mask key="constraints">
                                         <exclude reference="Wdn-d8-NcN"/>
                                         <exclude reference="ZBp-JR-B6o"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAYER 1 WINS!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0m-qk-0AH">
+                                <rect key="frame" x="234" y="562" width="132" height="17"/>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATTACK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnH-8W-ig9">
+                                <rect key="frame" x="382" y="297" width="104" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="7EJ-rM-szR"/>
+                                    <constraint firstAttribute="height" constant="21" id="WsI-vg-7ZT"/>
+                                    <constraint firstAttribute="height" constant="21" id="gBN-wo-y7Z"/>
+                                    <constraint firstAttribute="width" constant="104" id="tYz-vU-94f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7EJ-rM-szR"/>
+                                        <exclude reference="WsI-vg-7ZT"/>
                                     </mask>
                                 </variation>
                             </label>
@@ -145,18 +156,24 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Kek-MN-OwP" secondAttribute="bottom" id="6kh-3e-Z5g"/>
                             <constraint firstItem="CHM-Kf-Qbf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="69" id="77G-BR-fCC"/>
                             <constraint firstItem="cCc-Go-6IW" firstAttribute="top" secondItem="CHM-Kf-Qbf" secondAttribute="bottom" constant="20" id="7Bf-tb-uKd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="H0m-qk-0AH" secondAttribute="bottom" constant="20" id="7iF-KM-rtJ"/>
                             <constraint firstAttribute="trailing" secondItem="Kek-MN-OwP" secondAttribute="trailing" id="8UG-L2-dd0"/>
+                            <constraint firstItem="xro-aC-Dco" firstAttribute="centerY" secondItem="CHM-Kf-Qbf" secondAttribute="centerY" id="8fd-D2-JmH"/>
                             <constraint firstAttribute="trailing" secondItem="dC4-b4-UQr" secondAttribute="trailing" constant="48" id="Gjq-9P-V9r"/>
                             <constraint firstItem="dC4-b4-UQr" firstAttribute="top" secondItem="B0X-kj-yyJ" secondAttribute="bottom" constant="20" id="KGL-Zh-P4m"/>
                             <constraint firstItem="lfQ-12-Pz5" firstAttribute="top" secondItem="cCc-Go-6IW" secondAttribute="bottom" id="KMr-5q-AS5"/>
                             <constraint firstItem="cCc-Go-6IW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Keq-6x-9wV"/>
                             <constraint firstItem="cCc-Go-6IW" firstAttribute="top" secondItem="CHM-Kf-Qbf" secondAttribute="bottom" constant="10" id="L3E-op-M7Q"/>
+                            <constraint firstItem="GnH-8W-ig9" firstAttribute="centerX" secondItem="B0X-kj-yyJ" secondAttribute="centerX" id="NEU-zM-Xlh"/>
                             <constraint firstItem="lfQ-12-Pz5" firstAttribute="top" secondItem="dC4-b4-UQr" secondAttribute="bottom" id="OwY-Hq-puJ"/>
+                            <constraint firstItem="GnH-8W-ig9" firstAttribute="centerY" secondItem="xro-aC-Dco" secondAttribute="centerY" id="Qfa-bx-fGs"/>
                             <constraint firstItem="lfQ-12-Pz5" firstAttribute="top" secondItem="dC4-b4-UQr" secondAttribute="bottom" id="SMk-ds-upt"/>
                             <constraint firstItem="Kek-MN-OwP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Tan-Sc-fOM"/>
                             <constraint firstItem="cCc-Go-6IW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="WFh-zy-tr3"/>
                             <constraint firstAttribute="trailing" secondItem="lfQ-12-Pz5" secondAttribute="trailing" id="Wdm-Nu-NsL"/>
                             <constraint firstAttribute="trailing" secondItem="dC4-b4-UQr" secondAttribute="trailing" constant="39" id="Wnp-Tt-5UI"/>
+                            <constraint firstItem="GnH-8W-ig9" firstAttribute="centerX" secondItem="xro-aC-Dco" secondAttribute="centerX" id="X2q-SX-nIu"/>
+                            <constraint firstItem="H0m-qk-0AH" firstAttribute="centerX" secondItem="Vlg-mC-XcY" secondAttribute="centerX" id="aAM-Ei-HaF"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lfQ-12-Pz5" secondAttribute="bottom" id="c5B-JD-soR"/>
                             <constraint firstItem="lfQ-12-Pz5" firstAttribute="top" secondItem="cCc-Go-6IW" secondAttribute="bottom" id="e6V-CO-a0h"/>
                             <constraint firstItem="lfQ-12-Pz5" firstAttribute="top" secondItem="dC4-b4-UQr" secondAttribute="bottom" id="f5S-Ht-JEQ"/>
@@ -165,8 +182,12 @@
                             <constraint firstItem="lfQ-12-Pz5" firstAttribute="top" secondItem="dC4-b4-UQr" secondAttribute="bottom" id="ivm-de-hWg"/>
                             <constraint firstItem="lfQ-12-Pz5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lPs-gE-5i0"/>
                             <constraint firstItem="Kek-MN-OwP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ojm-zz-W6g"/>
+                            <constraint firstItem="xro-aC-Dco" firstAttribute="centerX" secondItem="CHM-Kf-Qbf" secondAttribute="centerX" id="pIc-GJ-uxt"/>
                             <constraint firstAttribute="trailing" secondItem="dC4-b4-UQr" secondAttribute="trailing" constant="48" id="slE-az-m04"/>
                             <constraint firstItem="Vlg-mC-XcY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vhs-PI-LP0"/>
+                            <constraint firstItem="H0m-qk-0AH" firstAttribute="centerY" secondItem="Vlg-mC-XcY" secondAttribute="centerY" id="xpg-mc-sOh"/>
+                            <constraint firstItem="GnH-8W-ig9" firstAttribute="centerY" secondItem="B0X-kj-yyJ" secondAttribute="centerY" id="yi4-hG-vVZ"/>
+                            <constraint firstItem="H0m-qk-0AH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ywZ-kG-NsT"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -176,11 +197,15 @@
                                 <exclude reference="Wnp-Tt-5UI"/>
                                 <exclude reference="ilG-nh-nkH"/>
                                 <exclude reference="slE-az-m04"/>
+                                <exclude reference="Qfa-bx-fGs"/>
+                                <exclude reference="X2q-SX-nIu"/>
                                 <exclude reference="KMr-5q-AS5"/>
                                 <exclude reference="SMk-ds-upt"/>
                                 <exclude reference="e6V-CO-a0h"/>
                                 <exclude reference="f5S-Ht-JEQ"/>
                                 <exclude reference="ivm-de-hWg"/>
+                                <exclude reference="7iF-KM-rtJ"/>
+                                <exclude reference="ywZ-kG-NsT"/>
                             </mask>
                         </variation>
                     </view>
