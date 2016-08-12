@@ -97,6 +97,14 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjK-2L-tvh">
+                                <rect key="frame" x="490" y="476" width="97" height="109"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="Rej-SU-GI0"/>
+                                    <constraint firstAttribute="height" constant="109" id="T2z-Hx-7k4"/>
+                                </constraints>
+                                <state key="normal" image="attack"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -106,6 +114,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jeK-Lz-HoE" secondAttribute="bottom" constant="82" id="4G0-h9-AVj"/>
                             <constraint firstItem="S8K-5j-kLm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8AT-bT-ypJ"/>
                             <constraint firstItem="5Ly-UB-ox1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="153" id="DYC-14-24X"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mjK-2L-tvh" secondAttribute="bottom" constant="15" id="INc-So-uTs"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lOw-OY-YIn" secondAttribute="bottom" id="J9V-XL-Fny"/>
                             <constraint firstItem="jeK-Lz-HoE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="M0R-fN-ruB"/>
                             <constraint firstAttribute="trailing" secondItem="S8K-5j-kLm" secondAttribute="trailing" id="PoU-pK-XPd"/>
@@ -116,6 +125,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="nw3-vR-6WI" secondAttribute="trailing" constant="20" id="dtP-8P-Qoh"/>
                             <constraint firstItem="S8K-5j-kLm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fMZ-ul-Gs4"/>
                             <constraint firstItem="jQ6-QV-4XW" firstAttribute="centerY" secondItem="5Ly-UB-ox1" secondAttribute="centerY" id="gze-3o-W6D"/>
+                            <constraint firstAttribute="trailing" secondItem="mjK-2L-tvh" secondAttribute="trailing" constant="13" id="ldo-rs-Hsn"/>
                             <constraint firstItem="lOw-OY-YIn" firstAttribute="leading" secondItem="Thg-az-sd5" secondAttribute="trailing" constant="1" id="moZ-i6-8pX"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="S8K-5j-kLm" secondAttribute="bottom" id="oDx-Rf-BC4"/>
                             <constraint firstAttribute="trailing" secondItem="Axy-dh-36N" secondAttribute="trailing" constant="34" id="s0P-XH-jhf"/>
@@ -138,6 +148,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="attack" width="198" height="223"/>
         <image name="bg" width="768" height="1024"/>
         <image name="chest" width="393" height="440"/>
         <image name="enem1" width="574" height="487"/>
