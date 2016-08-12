@@ -8,13 +8,28 @@ class ViewController: UIViewController {
     @IBOutlet weak var enemyImage: UIImageView!
     @IBOutlet weak var chestButton: UIButton!
     
+    var player: Player!
+    var enemy: Enemy!
+    
     @IBAction func onChestTapped(sender: AnyObject) {
     }
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        player = Player(name: "DirtyLaundry21", hp: 110, attackPower: 20)
+        generateRandomEnemy()
+        playerHpLabel.text = "\(player.hp) HP"
+    }
+    
+    func generateRandomEnemy() {
+        let rand = Int(arc4random_uniform(2))
+        
+        if rand == 0 {
+            enemy = Kimara(startingHp: 50, attackPower: 12)
+        } else {
+            enemy = DevilWizard(startingHp: 60, attackPower: 15)
+        }
     }
 
     override func didReceiveMemoryWarning() {
