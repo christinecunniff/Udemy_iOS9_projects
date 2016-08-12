@@ -21,13 +21,17 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="S8K-5j-kLm">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chest" translatesAutoresizingMaskIntoConstraints="NO" id="BxH-d8-jzQ">
-                                <rect key="frame" x="383" y="375" width="200" height="143"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nw3-vR-6WI">
+                                <rect key="frame" x="409" y="369" width="151" height="149"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="Ojy-cS-07W"/>
-                                    <constraint firstAttribute="height" constant="143" id="R2f-fM-78A"/>
+                                    <constraint firstAttribute="width" constant="151" id="cdy-c8-k1n"/>
+                                    <constraint firstAttribute="height" constant="149" id="da1-Bn-K0g"/>
                                 </constraints>
-                            </imageView>
+                                <state key="normal" title="Button" image="chest"/>
+                                <connections>
+                                    <action selector="onChestTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cgU-zx-gxf"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="Thg-az-sd5">
                                 <rect key="frame" x="0.0" y="517" width="389" height="83"/>
                                 <constraints>
@@ -97,19 +101,19 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Thg-az-sd5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="168-gC-E0n"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nw3-vR-6WI" secondAttribute="bottom" constant="82" id="1B8-dI-2Bh"/>
                             <constraint firstItem="e4s-MO-BH4" firstAttribute="centerY" secondItem="h33-z4-7pJ" secondAttribute="centerY" id="1De-fW-Izg"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jeK-Lz-HoE" secondAttribute="bottom" constant="82" id="4G0-h9-AVj"/>
                             <constraint firstItem="S8K-5j-kLm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8AT-bT-ypJ"/>
                             <constraint firstItem="5Ly-UB-ox1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="153" id="DYC-14-24X"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lOw-OY-YIn" secondAttribute="bottom" id="J9V-XL-Fny"/>
                             <constraint firstItem="jeK-Lz-HoE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="M0R-fN-ruB"/>
-                            <constraint firstAttribute="trailing" secondItem="BxH-d8-jzQ" secondAttribute="trailing" constant="17" id="Not-PG-gfM"/>
                             <constraint firstAttribute="trailing" secondItem="S8K-5j-kLm" secondAttribute="trailing" id="PoU-pK-XPd"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BxH-d8-jzQ" secondAttribute="bottom" constant="82" id="Syp-ay-anP"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Thg-az-sd5" secondAttribute="bottom" id="U2j-CY-W0S"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Axy-dh-36N" secondAttribute="bottom" constant="63" id="VpA-HH-lAC"/>
                             <constraint firstItem="e4s-MO-BH4" firstAttribute="centerX" secondItem="h33-z4-7pJ" secondAttribute="centerX" id="aEB-I2-4ww"/>
                             <constraint firstItem="h33-z4-7pJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="dDg-f8-BVp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nw3-vR-6WI" secondAttribute="trailing" constant="20" id="dtP-8P-Qoh"/>
                             <constraint firstItem="S8K-5j-kLm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fMZ-ul-Gs4"/>
                             <constraint firstItem="jQ6-QV-4XW" firstAttribute="centerY" secondItem="5Ly-UB-ox1" secondAttribute="centerY" id="gze-3o-W6D"/>
                             <constraint firstItem="lOw-OY-YIn" firstAttribute="leading" secondItem="Thg-az-sd5" secondAttribute="trailing" constant="1" id="moZ-i6-8pX"/>
@@ -120,6 +124,13 @@
                             <constraint firstItem="Thg-az-sd5" firstAttribute="top" secondItem="5Ly-UB-ox1" secondAttribute="bottom" constant="105" id="t3C-7h-8mo"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="chestButton" destination="nw3-vR-6WI" id="ek3-9C-tiP"/>
+                        <outlet property="enemyHpLabel" destination="jQ6-QV-4XW" id="kgT-yB-ojl"/>
+                        <outlet property="enemyImage" destination="Axy-dh-36N" id="UfW-bg-Fhg"/>
+                        <outlet property="playerHpLabel" destination="5Ly-UB-ox1" id="6xv-Wq-6J5"/>
+                        <outlet property="printLabel" destination="e4s-MO-BH4" id="uKK-nw-GrA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
