@@ -22,9 +22,12 @@ class ViewController: UIViewController {
         
         if enemy.attemptAttack(player.attackPower) {
             printLabel.text = "Attacked \(enemy.type) for \(player.attackPower) HP"
+            enemyHpLabel.text = "\(enemy.hp) HP"
         } else {
             printLabel.text = "Attack was unsuccessful!"
         }
+        
+        enemyImage.hidden = false
         
         if let loot = enemy.dropLoot() {
             player.addItemToInventory(loot)
