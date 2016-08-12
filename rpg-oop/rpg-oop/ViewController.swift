@@ -51,6 +51,7 @@ class ViewController: UIViewController {
     }
     
     func generateRandomEnemy() {
+        
         let rand = Int(arc4random_uniform(2))
         
         if rand == 0 {
@@ -58,13 +59,7 @@ class ViewController: UIViewController {
         } else {
             enemy = DevilWizard(startingHp: 60, attackPower: 15)
         }
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
-

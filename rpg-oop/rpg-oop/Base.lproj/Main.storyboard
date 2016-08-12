@@ -5,6 +5,13 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -98,7 +105,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjK-2L-tvh" userLabel="attack">
-                                <rect key="frame" x="490" y="476" width="97" height="109"/>
+                                <rect key="frame" x="252" y="476" width="97" height="109"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="Rej-SU-GI0"/>
                                     <constraint firstAttribute="height" constant="109" id="T2z-Hx-7k4"/>
@@ -121,6 +128,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lOw-OY-YIn" secondAttribute="bottom" id="J9V-XL-Fny"/>
                             <constraint firstItem="jeK-Lz-HoE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="M0R-fN-ruB"/>
                             <constraint firstAttribute="trailing" secondItem="S8K-5j-kLm" secondAttribute="trailing" id="PoU-pK-XPd"/>
+                            <constraint firstItem="mjK-2L-tvh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QN2-Mo-SAk"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Thg-az-sd5" secondAttribute="bottom" id="U2j-CY-W0S"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Axy-dh-36N" secondAttribute="bottom" constant="63" id="VpA-HH-lAC"/>
                             <constraint firstItem="e4s-MO-BH4" firstAttribute="centerX" secondItem="h33-z4-7pJ" secondAttribute="centerX" id="aEB-I2-4ww"/>
@@ -136,6 +144,11 @@
                             <constraint firstAttribute="trailingMargin" secondItem="jQ6-QV-4XW" secondAttribute="trailing" constant="191" id="sUa-MG-umi"/>
                             <constraint firstItem="Thg-az-sd5" firstAttribute="top" secondItem="5Ly-UB-ox1" secondAttribute="bottom" constant="105" id="t3C-7h-8mo"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ldo-rs-Hsn"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="chestButton" destination="nw3-vR-6WI" id="ek3-9C-tiP"/>
