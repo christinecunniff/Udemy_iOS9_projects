@@ -9,6 +9,7 @@
             <string>Minecraft</string>
             <string>Minecraft</string>
             <string>Minecraft</string>
+            <string>Minecraft</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -135,6 +136,12 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMP-sF-jkE">
+                                <rect key="frame" x="86" y="421" width="417" height="41"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="23"/>
+                                <state key="normal" title="PLAY AGAIN?"/>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATTACK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnH-8W-ig9" userLabel="pOneAttack">
                                 <rect key="frame" x="382" y="297" width="104" height="21"/>
                                 <constraints>
