@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  rpg-oop
-//
-//  Created by Christine Cunniff on 8/12/16.
-//  Copyright © 2016 TonicDesign. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {

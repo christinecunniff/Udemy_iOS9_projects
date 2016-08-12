@@ -78,11 +78,11 @@
 			children = (
 				EF86AD861D5E06E900D76170 /* AppDelegate.swift */,
 				EF86AD981D5E07D400D76170 /* Character.swift */,
+				EF86ADA11D5E102E00D76170 /* DevilWizard.swift */,
 				EF86AD9D1D5E0CEB00D76170 /* Enemy.swift */,
+				EF86AD9F1D5E0E1100D76170 /* Kimara.swift */,
 				EF86AD9A1D5E0A7E00D76170 /* Player.swift */,
 				EF86AD881D5E06E900D76170 /* ViewController.swift */,
-				EF86AD9F1D5E0E1100D76170 /* Kimara.swift */,
-				EF86ADA11D5E102E00D76170 /* DevilWizard.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
