@@ -16,6 +16,7 @@
 		EF86AD9B1D5E0A7E00D76170 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF86AD9A1D5E0A7E00D76170 /* Player.swift */; };
 		EF86AD9E1D5E0CEB00D76170 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF86AD9D1D5E0CEB00D76170 /* Enemy.swift */; };
 		EF86ADA01D5E0E1100D76170 /* Kimara.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF86AD9F1D5E0E1100D76170 /* Kimara.swift */; };
+		EF86ADA21D5E102E00D76170 /* DevilWizard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF86ADA11D5E102E00D76170 /* DevilWizard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		EF86AD9A1D5E0A7E00D76170 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		EF86AD9D1D5E0CEB00D76170 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		EF86AD9F1D5E0E1100D76170 /* Kimara.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kimara.swift; sourceTree = "<group>"; };
+		EF86ADA11D5E102E00D76170 /* DevilWizard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevilWizard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				EF86AD9A1D5E0A7E00D76170 /* Player.swift */,
 				EF86AD881D5E06E900D76170 /* ViewController.swift */,
 				EF86AD9F1D5E0E1100D76170 /* Kimara.swift */,
+				EF86ADA11D5E102E00D76170 /* DevilWizard.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			files = (
 				EF86AD9B1D5E0A7E00D76170 /* Player.swift in Sources */,
 				EF86AD9E1D5E0CEB00D76170 /* Enemy.swift in Sources */,
+				EF86ADA21D5E102E00D76170 /* DevilWizard.swift in Sources */,
 				EF86ADA01D5E0E1100D76170 /* Kimara.swift in Sources */,
 				EF86AD991D5E07D400D76170 /* Character.swift in Sources */,
 				EF86AD891D5E06E900D76170 /* ViewController.swift in Sources */,
