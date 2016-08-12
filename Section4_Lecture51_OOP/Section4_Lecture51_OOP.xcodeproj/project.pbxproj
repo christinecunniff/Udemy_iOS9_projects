@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF5ACF651D5E6250001F51C7 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF5ACF641D5E6250001F51C7 /* Minecraft.ttf */; };
 		EF6B73081D5E4409005B4882 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6B73071D5E4409005B4882 /* AppDelegate.swift */; };
 		EF6B730A1D5E4409005B4882 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6B73091D5E4409005B4882 /* ViewController.swift */; };
 		EF6B730D1D5E440A005B4882 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6B730B1D5E440A005B4882 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF5ACF641D5E6250001F51C7 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
 		EF6B73041D5E4409005B4882 /* Section4_Lecture51_OOP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Section4_Lecture51_OOP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF6B73071D5E4409005B4882 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF6B73091D5E4409005B4882 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		EF6B73061D5E4409005B4882 /* Section4_Lecture51_OOP */ = {
 			isa = PBXGroup;
 			children = (
+				EF5ACF641D5E6250001F51C7 /* Minecraft.ttf */,
 				EF6B73071D5E4409005B4882 /* AppDelegate.swift */,
 				EF6B73091D5E4409005B4882 /* ViewController.swift */,
 				EF6B730B1D5E440A005B4882 /* Main.storyboard */,
@@ -125,6 +128,7 @@
 			files = (
 				EF6B73121D5E440A005B4882 /* LaunchScreen.storyboard in Resources */,
 				EF6B730F1D5E440A005B4882 /* Assets.xcassets in Resources */,
+				EF5ACF651D5E6250001F51C7 /* Minecraft.ttf in Resources */,
 				EF6B730D1D5E440A005B4882 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +293,7 @@
 				EF6B73181D5E440A005B4882 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
