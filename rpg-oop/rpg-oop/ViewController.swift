@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         }
         
         if let loot = enemy.dropLoot() {
+            player.addItemToInventory(loot)
             chestMessage = "\(player.name) found \(loot)"
             chestButton.hidden = false
         }
