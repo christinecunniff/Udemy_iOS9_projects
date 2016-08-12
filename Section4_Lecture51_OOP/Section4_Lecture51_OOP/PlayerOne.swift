@@ -4,7 +4,7 @@ class PlayerOne {
 
     private var _hp: Int = 100
     private var _attackPower: Int = 10
-    private var _name: String = "Player"
+    private var _name: String = "Player One"
     
     var hp: Int {
         get {
