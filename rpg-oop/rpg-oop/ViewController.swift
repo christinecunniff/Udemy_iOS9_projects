@@ -10,9 +10,34 @@ class ViewController: UIViewController {
     
     var player: Player!
     var enemy: Enemy!
+    var chestMessage: String?
     
     @IBAction func onChestTapped(sender: AnyObject) {
+        chestButton.hidden = true
+        printLabel.text = chestMessage
+        NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: #selector(ViewController.generateRandomEnemy), userInfo: nil, repeats: false)
     }
+    
+    @IBAction func attackTapped(sender: AnyObject) {
+        
+        if enemy.attemptAttack(player.attackPower) {
+            printLabel.text = "Attacked \(enemy.type) for \(player.attackPower) HP"
+        } else {
+            printLabel.text = "Attack was unsuccessful!"
+        }
+        
+        if let loot = enemy.dropLoot() {
+            chestMessage = "\(player.name) found \(loot)"
+            chestButton.hidden = false
+        }
+        
+        if !enemy.isAlive {
+            enemyHpLabel.text = ""
+            printLabel.text = "Killed \(enemy.type)!"
+            enemyImage.hidden = true
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
