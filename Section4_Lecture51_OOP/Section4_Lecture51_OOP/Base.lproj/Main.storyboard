@@ -28,25 +28,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Kek-MN-OwP">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMP-sF-jkE">
-                                <rect key="frame" x="64" y="379" width="472" height="121"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="121" id="7jX-Sr-GhO"/>
-                                    <constraint firstAttribute="width" constant="411" id="95g-qN-lwg"/>
-                                    <constraint firstAttribute="width" constant="472" id="Hh6-Ld-xgB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="23"/>
-                                <state key="normal" title="PLAY AGAIN?"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="95g-qN-lwg"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="onPlayAgainTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tun-PX-TQR"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="lfQ-12-Pz5">
                                 <rect key="frame" x="0.0" y="540" width="600" height="60"/>
                                 <constraints>
@@ -109,6 +90,25 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMP-sF-jkE">
+                                <rect key="frame" x="64" y="379" width="472" height="121"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="121" id="7jX-Sr-GhO"/>
+                                    <constraint firstAttribute="width" constant="411" id="95g-qN-lwg"/>
+                                    <constraint firstAttribute="width" constant="472" id="Hh6-Ld-xgB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="23"/>
+                                <state key="normal" title="PLAY AGAIN?"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="95g-qN-lwg"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="onPlayAgainTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tun-PX-TQR"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHM-Kf-Qbf">
                                 <rect key="frame" x="69" y="283" width="138" height="50"/>
                                 <constraints>

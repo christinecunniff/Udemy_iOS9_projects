@@ -13,22 +13,23 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         playerOne = PlayerOne(startingHp: 100, attackPower: 10)
-        playerTwo = PlayerTwo(startingHp: 120, attackPower: 10)
+        playerTwo = PlayerTwo(startingHp: 100, attackPower: 10)
         
     }
     
     @IBAction func onPlayerOneAttack(sender: AnyObject) {
-        if playerTwo.attack((playerOne.attackPower)) {
+        if playerTwo.attack(playerOne.attackPower) {
             NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: #selector(ViewController.onPlayerTwoAttack(_:)), userInfo: nil, repeats: false)
         }
         
         if !playerTwo.isAlive {
             winnerLabel.text = "Player 2 defeated!!!"
+            playAgainButton.hidden = false
         }
     }
     
     @IBAction func onPlayerTwoAttack(sender: AnyObject) {
-        if playerOne.attack((playerTwo.attackPower)) {
+        if playerOne.attack(playerTwo.attackPower) {
             NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: #selector(ViewController.onPlayerOneAttack(_:)), userInfo: nil, repeats: false)
         }
         
@@ -38,7 +39,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onPlayAgainTapped(sender: AnyObject) {
-        winnerLabel.text = ""
         playAgainButton.hidden = true
     }
     
