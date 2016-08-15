@@ -60,6 +60,13 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="KoI-Br-LFU">
+                                <rect key="frame" x="-95" y="192" width="668" height="367"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="367" id="ieH-uY-sDa"/>
+                                    <constraint firstAttribute="width" constant="668" id="m5c-8B-pxg"/>
+                                </constraints>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="rlq-wZ-oHZ">
                                 <rect key="frame" x="155" y="116" width="290" height="98"/>
                                 <subviews>
@@ -70,14 +77,21 @@
                                         <rect key="frame" x="195" y="0.0" width="95" height="98"/>
                                     </imageView>
                                 </subviews>
-                            </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="KoI-Br-LFU">
-                                <rect key="frame" x="-95" y="192" width="668" height="367"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="367" id="ieH-uY-sDa"/>
-                                    <constraint firstAttribute="width" constant="668" id="m5c-8B-pxg"/>
+                                    <constraint firstAttribute="width" constant="96" id="iQy-EZ-0X9"/>
                                 </constraints>
-                            </imageView>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="iQy-EZ-0X9"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact" axis="vertical" misplaced="YES" spacing="30">
+                                    <rect key="frame" x="485" y="28" width="96" height="226"/>
+                                    <mask key="constraints">
+                                        <include reference="iQy-EZ-0X9"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -90,13 +104,39 @@
                             <constraint firstAttribute="trailing" secondItem="YnK-A5-fGC" secondAttribute="trailing" id="HUj-dl-FeG"/>
                             <constraint firstItem="isQ-mK-uti" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IF1-WY-S1T"/>
                             <constraint firstItem="YnK-A5-fGC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OBf-Wd-iZF"/>
+                            <constraint firstItem="rlq-wZ-oHZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oar-x5-usb"/>
+                            <constraint firstItem="rlq-wZ-oHZ" firstAttribute="top" secondItem="m2S-KE-n1f" secondAttribute="bottom" constant="15" id="PyU-h1-aQK"/>
                             <constraint firstItem="KoI-Br-LFU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-115" id="SXD-NH-sFK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rlq-wZ-oHZ" secondAttribute="trailing" id="Wkm-rl-C59"/>
                             <constraint firstItem="2Ox-mS-gg0" firstAttribute="centerX" secondItem="m2S-KE-n1f" secondAttribute="centerX" id="XQC-VC-gJN"/>
                             <constraint firstItem="isQ-mK-uti" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Xts-PM-2He"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KoI-Br-LFU" secondAttribute="bottom" constant="41" id="Yhl-98-znd"/>
+                            <constraint firstItem="rlq-wZ-oHZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZMT-VA-6cG"/>
                             <constraint firstItem="rlq-wZ-oHZ" firstAttribute="top" secondItem="m2S-KE-n1f" secondAttribute="bottom" constant="15" id="aNP-Bx-Pjj"/>
+                            <constraint firstItem="rlq-wZ-oHZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="n3a-qL-WnP"/>
                             <constraint firstItem="m2S-KE-n1f" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="wnr-p2-9UP"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8Vf-hB-UJ8"/>
+                                <exclude reference="Wkm-rl-C59"/>
+                                <exclude reference="ZMT-VA-6cG"/>
+                                <exclude reference="aNP-Bx-Pjj"/>
+                                <exclude reference="n3a-qL-WnP"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="Oar-x5-usb"/>
+                                <include reference="Wkm-rl-C59"/>
+                                <include reference="n3a-qL-WnP"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="ZMT-VA-6cG"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="monsterImage" destination="KoI-Br-LFU" id="FWF-71-i9I"/>
