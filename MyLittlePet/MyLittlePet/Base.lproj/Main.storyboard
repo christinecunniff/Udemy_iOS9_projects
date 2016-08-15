@@ -70,10 +70,10 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="rlq-wZ-oHZ">
                                 <rect key="frame" x="155" y="116" width="290" height="98"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="VxW-Hx-1kx">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="VxW-Hx-1kx" customClass="DragImage" customModule="MyLittlePet" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="95" height="98"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="wjb-zs-fQv">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="wjb-zs-fQv" customClass="DragImage" customModule="MyLittlePet" customModuleProvider="target">
                                         <rect key="frame" x="195" y="0.0" width="95" height="98"/>
                                     </imageView>
                                 </subviews>
@@ -139,6 +139,8 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="foodImage" destination="wjb-zs-fQv" id="mlS-6q-JYi"/>
+                        <outlet property="heartImage" destination="VxW-Hx-1kx" id="qqv-gk-NVg"/>
                         <outlet property="monsterImage" destination="KoI-Br-LFU" id="FWF-71-i9I"/>
                     </connections>
                 </viewController>
