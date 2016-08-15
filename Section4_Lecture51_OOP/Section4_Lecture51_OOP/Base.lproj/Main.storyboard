@@ -36,7 +36,7 @@
                                     <constraint firstAttribute="height" constant="60" id="jvf-aF-6az"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 HP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5y6-wZ-wZK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 HP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5y6-wZ-wZK" userLabel="playerOneHp">
                                 <rect key="frame" x="193" y="507" width="80" height="25"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -189,7 +189,7 @@
                                     <action selector="onPlayAgainTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tun-PX-TQR"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 HP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42j-Fn-vec">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 HP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42j-Fn-vec" userLabel="playerTwoHp">
                                 <rect key="frame" x="315" y="507" width="80" height="25"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -278,6 +278,8 @@
                     </view>
                     <connections>
                         <outlet property="playAgainButton" destination="lMP-sF-jkE" id="AOV-gx-C3k"/>
+                        <outlet property="playerOneHp" destination="5y6-wZ-wZK" id="W0Q-qW-nL0"/>
+                        <outlet property="playerTwoHp" destination="42j-Fn-vec" id="TOe-qR-Vok"/>
                         <outlet property="winnerLabel" destination="H0m-qk-0AH" id="X0O-5f-rWL"/>
                     </connections>
                 </viewController>

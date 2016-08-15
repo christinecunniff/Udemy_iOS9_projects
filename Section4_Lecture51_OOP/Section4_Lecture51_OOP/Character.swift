@@ -4,6 +4,13 @@ class Character {
     
     private var _hp: Int = 100
     private var _attackPower: Int = 10
+    private var _name = ""
+    
+    var name: String {
+        get {
+            return _name
+        }
+    }
     
     var hp: Int {
         get {

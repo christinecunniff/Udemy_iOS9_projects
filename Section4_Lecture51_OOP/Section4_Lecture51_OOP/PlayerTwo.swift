@@ -1,9 +1,6 @@
 import Foundation
 
-class PlayerTwo: PlayerOne {
+class PlayerTwo: Character {
     
-    override var name: String {
-        return "Player Two"
-    }
     
 }
