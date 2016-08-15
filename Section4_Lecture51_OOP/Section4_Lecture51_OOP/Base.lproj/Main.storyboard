@@ -28,6 +28,25 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Kek-MN-OwP">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMP-sF-jkE">
+                                <rect key="frame" x="64" y="379" width="472" height="121"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="121" id="7jX-Sr-GhO"/>
+                                    <constraint firstAttribute="width" constant="411" id="95g-qN-lwg"/>
+                                    <constraint firstAttribute="width" constant="472" id="Hh6-Ld-xgB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="23"/>
+                                <state key="normal" title="PLAY AGAIN?"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="95g-qN-lwg"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="onPlayAgainTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tun-PX-TQR"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="lfQ-12-Pz5">
                                 <rect key="frame" x="0.0" y="540" width="600" height="60"/>
                                 <constraints>
@@ -130,18 +149,15 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAYER 1 WINS!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0m-qk-0AH">
-                                <rect key="frame" x="234" y="562" width="132" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap ATTACK to start!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0m-qk-0AH">
+                                <rect key="frame" x="154" y="562" width="292" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="292" id="5Hs-Iy-MyB"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMP-sF-jkE">
-                                <rect key="frame" x="86" y="421" width="417" height="41"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="23"/>
-                                <state key="normal" title="PLAY AGAIN?"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATTACK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnH-8W-ig9" userLabel="pOneAttack">
                                 <rect key="frame" x="382" y="297" width="104" height="21"/>
                                 <constraints>
@@ -178,6 +194,7 @@
                             <constraint firstItem="cCc-Go-6IW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Keq-6x-9wV"/>
                             <constraint firstItem="cCc-Go-6IW" firstAttribute="top" secondItem="CHM-Kf-Qbf" secondAttribute="bottom" constant="10" id="L3E-op-M7Q"/>
                             <constraint firstItem="GnH-8W-ig9" firstAttribute="centerX" secondItem="B0X-kj-yyJ" secondAttribute="centerX" id="NEU-zM-Xlh"/>
+                            <constraint firstItem="lfQ-12-Pz5" firstAttribute="top" secondItem="lMP-sF-jkE" secondAttribute="bottom" constant="40" id="Ous-zt-ZXE"/>
                             <constraint firstItem="lfQ-12-Pz5" firstAttribute="top" secondItem="dC4-b4-UQr" secondAttribute="bottom" id="OwY-Hq-puJ"/>
                             <constraint firstItem="GnH-8W-ig9" firstAttribute="centerY" secondItem="xro-aC-Dco" secondAttribute="centerY" id="Qfa-bx-fGs"/>
                             <constraint firstItem="lfQ-12-Pz5" firstAttribute="top" secondItem="dC4-b4-UQr" secondAttribute="bottom" id="SMk-ds-upt"/>
@@ -186,6 +203,7 @@
                             <constraint firstAttribute="trailing" secondItem="lfQ-12-Pz5" secondAttribute="trailing" id="Wdm-Nu-NsL"/>
                             <constraint firstAttribute="trailing" secondItem="dC4-b4-UQr" secondAttribute="trailing" constant="39" id="Wnp-Tt-5UI"/>
                             <constraint firstItem="GnH-8W-ig9" firstAttribute="centerX" secondItem="xro-aC-Dco" secondAttribute="centerX" id="X2q-SX-nIu"/>
+                            <constraint firstItem="lMP-sF-jkE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZaF-mP-Vqu"/>
                             <constraint firstItem="H0m-qk-0AH" firstAttribute="centerX" secondItem="Vlg-mC-XcY" secondAttribute="centerX" id="aAM-Ei-HaF"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lfQ-12-Pz5" secondAttribute="bottom" id="c5B-JD-soR"/>
                             <constraint firstItem="lfQ-12-Pz5" firstAttribute="top" secondItem="cCc-Go-6IW" secondAttribute="bottom" id="e6V-CO-a0h"/>
@@ -223,6 +241,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="playAgainButton" destination="lMP-sF-jkE" id="AOV-gx-C3k"/>
                         <outlet property="winnerLabel" destination="H0m-qk-0AH" id="X0O-5f-rWL"/>
                     </connections>
                 </viewController>
