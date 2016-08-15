@@ -1,47 +1,19 @@
 import Foundation
 
-class PlayerOne {
+class PlayerOne: Character {
 
-    private var _hp: Int = 100
-    private var _attackPower: Int = 10
-    private var _name: String = "Player One"
-    
-    var hp: Int {
-        get {
-            return _hp
-        }
-    }
-    
-    var attackPower: Int {
-        get {
-            return _attackPower
-        }
-    }
+    private var _name = "Player One"
     
     var name: String {
         get {
             return _name
         }
     }
-
-    var isAlive: Bool {
-        get {
-            if hp <= 0 {
-                return false
-            } else {
-                return true
-            }
-        }
-    }
     
-    init(startingHp: Int, attackPower: Int) {
-        self._hp = startingHp
-        self._attackPower = attackPower
-    }
-    
-    func attack(attackPower: Int) ->Bool {
-        self._hp -= attackPower
+    convenience init(name: String, hp: Int, attackPower: Int) {
+        self.init(startingHp: hp, attackPower: attackPower)
         
-        return true
+        _name = name
     }
+
 }

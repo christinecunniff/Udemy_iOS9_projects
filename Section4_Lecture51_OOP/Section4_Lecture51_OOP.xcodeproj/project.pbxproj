@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF43FBAE1D62008300F276E2 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF43FBAD1D62008300F276E2 /* Character.swift */; };
 		EF5ACF651D5E6250001F51C7 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF5ACF641D5E6250001F51C7 /* Minecraft.ttf */; };
 		EF5ACF671D5E68DE001F51C7 /* PlayerOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5ACF661D5E68DE001F51C7 /* PlayerOne.swift */; };
 		EF5ACF6A1D5E6FB3001F51C7 /* PlayerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5ACF691D5E6FB3001F51C7 /* PlayerTwo.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF43FBAD1D62008300F276E2 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		EF5ACF641D5E6250001F51C7 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
 		EF5ACF661D5E68DE001F51C7 /* PlayerOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerOne.swift; sourceTree = "<group>"; };
 		EF5ACF691D5E6FB3001F51C7 /* PlayerTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTwo.swift; sourceTree = "<group>"; };
@@ -41,6 +43,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF43FBAF1D62025000F276E2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EF43FBAD1D62008300F276E2 /* Character.swift */,
+				EF5ACF661D5E68DE001F51C7 /* PlayerOne.swift */,
+				EF5ACF691D5E6FB3001F51C7 /* PlayerTwo.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		EF6B72FB1D5E4409005B4882 = {
 			isa = PBXGroup;
 			children = (
@@ -63,8 +75,7 @@
 				EF5ACF641D5E6250001F51C7 /* Minecraft.ttf */,
 				EF6B73071D5E4409005B4882 /* AppDelegate.swift */,
 				EF6B73091D5E4409005B4882 /* ViewController.swift */,
-				EF5ACF661D5E68DE001F51C7 /* PlayerOne.swift */,
-				EF5ACF691D5E6FB3001F51C7 /* PlayerTwo.swift */,
+				EF43FBAF1D62025000F276E2 /* Classes */,
 				EF6B730B1D5E440A005B4882 /* Main.storyboard */,
 				EF6B730E1D5E440A005B4882 /* Assets.xcassets */,
 				EF6B73101D5E440A005B4882 /* LaunchScreen.storyboard */,
@@ -148,6 +159,7 @@
 			files = (
 				EF5ACF671D5E68DE001F51C7 /* PlayerOne.swift in Sources */,
 				EF5ACF6A1D5E6FB3001F51C7 /* PlayerTwo.swift in Sources */,
+				EF43FBAE1D62008300F276E2 /* Character.swift in Sources */,
 				EF6B730A1D5E4409005B4882 /* ViewController.swift in Sources */,
 				EF6B73081D5E4409005B4882 /* AppDelegate.swift in Sources */,
 			);
