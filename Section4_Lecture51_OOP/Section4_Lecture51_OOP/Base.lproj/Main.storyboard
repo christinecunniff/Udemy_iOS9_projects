@@ -11,7 +11,6 @@
             <string>Minecraft</string>
             <string>Minecraft</string>
             <string>Minecraft</string>
-            <string>Minecraft</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -36,7 +35,7 @@
                                     <constraint firstAttribute="height" constant="60" id="jvf-aF-6az"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 HP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5y6-wZ-wZK" userLabel="playerOneHp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 HP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5y6-wZ-wZK" userLabel="monsterHp">
                                 <rect key="frame" x="193" y="507" width="80" height="25"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -111,7 +110,7 @@
                                 </constraints>
                                 <state key="normal" image="player1attackbtn"/>
                                 <connections>
-                                    <action selector="onPlayerOneAttack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yge-Nm-Ak3"/>
+                                    <action selector="onMonsterAttack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T9p-au-LBx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0X-kj-yyJ">
@@ -122,10 +121,10 @@
                                 </constraints>
                                 <state key="normal" image="player2attackbtn"/>
                                 <connections>
-                                    <action selector="onPlayerTwoAttack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3VL-8x-tt7"/>
+                                    <action selector="onKnightAttack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2XZ-82-xIe"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATTACK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xro-aC-Dco" userLabel="pTwoAttack">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATTACK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xro-aC-Dco" userLabel="monsterAttackLabel">
                                 <rect key="frame" x="86" y="297" width="104" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="7aK-QZ-ZAJ"/>
@@ -152,7 +151,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATTACK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnH-8W-ig9" userLabel="pOneAttack">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATTACK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnH-8W-ig9" userLabel="knightAttackLabel">
                                 <rect key="frame" x="382" y="297" width="104" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="68" id="7EJ-rM-szR"/>
@@ -170,26 +169,7 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMP-sF-jkE">
-                                <rect key="frame" x="64" y="379" width="472" height="121"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="121" id="7jX-Sr-GhO"/>
-                                    <constraint firstAttribute="width" constant="411" id="95g-qN-lwg"/>
-                                    <constraint firstAttribute="width" constant="472" id="Hh6-Ld-xgB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="23"/>
-                                <state key="normal" title="PLAY AGAIN?"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="95g-qN-lwg"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="onPlayAgainTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tun-PX-TQR"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 HP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42j-Fn-vec" userLabel="playerTwoHp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 HP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42j-Fn-vec" userLabel="knightHpLabel">
                                 <rect key="frame" x="315" y="507" width="80" height="25"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -228,7 +208,6 @@
                             <constraint firstItem="cCc-Go-6IW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Keq-6x-9wV"/>
                             <constraint firstItem="cCc-Go-6IW" firstAttribute="top" secondItem="CHM-Kf-Qbf" secondAttribute="bottom" constant="10" id="L3E-op-M7Q"/>
                             <constraint firstItem="GnH-8W-ig9" firstAttribute="centerX" secondItem="B0X-kj-yyJ" secondAttribute="centerX" id="NEU-zM-Xlh"/>
-                            <constraint firstItem="lfQ-12-Pz5" firstAttribute="top" secondItem="lMP-sF-jkE" secondAttribute="bottom" constant="40" id="Ous-zt-ZXE"/>
                             <constraint firstItem="lfQ-12-Pz5" firstAttribute="top" secondItem="dC4-b4-UQr" secondAttribute="bottom" id="OwY-Hq-puJ"/>
                             <constraint firstItem="GnH-8W-ig9" firstAttribute="centerY" secondItem="xro-aC-Dco" secondAttribute="centerY" id="Qfa-bx-fGs"/>
                             <constraint firstItem="lfQ-12-Pz5" firstAttribute="top" secondItem="dC4-b4-UQr" secondAttribute="bottom" id="SMk-ds-upt"/>
@@ -237,7 +216,6 @@
                             <constraint firstAttribute="trailing" secondItem="lfQ-12-Pz5" secondAttribute="trailing" id="Wdm-Nu-NsL"/>
                             <constraint firstAttribute="trailing" secondItem="dC4-b4-UQr" secondAttribute="trailing" constant="39" id="Wnp-Tt-5UI"/>
                             <constraint firstItem="GnH-8W-ig9" firstAttribute="centerX" secondItem="xro-aC-Dco" secondAttribute="centerX" id="X2q-SX-nIu"/>
-                            <constraint firstItem="lMP-sF-jkE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZaF-mP-Vqu"/>
                             <constraint firstItem="H0m-qk-0AH" firstAttribute="centerX" secondItem="Vlg-mC-XcY" secondAttribute="centerX" id="aAM-Ei-HaF"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lfQ-12-Pz5" secondAttribute="bottom" id="c5B-JD-soR"/>
                             <constraint firstItem="lfQ-12-Pz5" firstAttribute="top" secondItem="cCc-Go-6IW" secondAttribute="bottom" id="e6V-CO-a0h"/>
@@ -277,11 +255,10 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="playAgainButton" destination="lMP-sF-jkE" id="AOV-gx-C3k"/>
-                        <outlet property="playerOneAttackButton" destination="CHM-Kf-Qbf" id="6bw-tv-CA0"/>
-                        <outlet property="playerOneHp" destination="5y6-wZ-wZK" id="W0Q-qW-nL0"/>
-                        <outlet property="playerTwoAttackButton" destination="B0X-kj-yyJ" id="mwv-GB-8iR"/>
-                        <outlet property="playerTwoHp" destination="42j-Fn-vec" id="TOe-qR-Vok"/>
+                        <outlet property="knightAttackButton" destination="B0X-kj-yyJ" id="b93-gm-SHS"/>
+                        <outlet property="knightHpLabel" destination="42j-Fn-vec" id="GqB-9q-a3O"/>
+                        <outlet property="monsterAttackButton" destination="CHM-Kf-Qbf" id="Jad-bx-VzP"/>
+                        <outlet property="monsterHpLabel" destination="5y6-wZ-wZK" id="l7Y-EF-h5R"/>
                         <outlet property="winnerLabel" destination="H0m-qk-0AH" id="X0O-5f-rWL"/>
                     </connections>
                 </viewController>

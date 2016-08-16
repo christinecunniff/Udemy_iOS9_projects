@@ -8,4 +8,9 @@ class Player: Character {
         return _name
     }
 
+    convenience init(name: String, hp: Int, attackPower: Int) {
+        self.init(startingHp: hp, attackPower: attackPower)
+        
+        _name = name
+    }
 }

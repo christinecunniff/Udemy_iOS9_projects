@@ -3,67 +3,43 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var winnerLabel: UILabel!
-    @IBOutlet weak var playerOneHp: UILabel!
-    @IBOutlet weak var playerTwoHp: UILabel!
-    @IBOutlet weak var playerOneAttackButton: UIButton!
-    @IBOutlet weak var playerTwoAttackButton: UIButton!
+    @IBOutlet weak var monsterHpLabel: UILabel!
+    @IBOutlet weak var knightHpLabel: UILabel!
+    @IBOutlet weak var monsterAttackButton: UIButton!
+    @IBOutlet weak var knightAttackButton: UIButton!
+
     
-    var playerOne: Player!
-    var playerTwo: Player!
-    //var winnerMessage: String?
+    var knight: Player!
+    var monster: Enemy!
+    var game: Game!
+    var hp: Int!
+    var ap: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        playerOne = Player(startingHp: 100, attackPower: 20)
-        playerTwo = Player(startingHp: 150, attackPower: 15)
-        
-        playerOneHp.text = "\(playerOne.hp) HP"
-        playerTwoHp.text = "\(playerTwo.hp) HP"
-        
+        startGame()
     }
     
-    @IBAction func onPlayerOneAttack(sender: AnyObject) {
-        if playerTwo.attack(playerOne.attackPower) {
-            playerTwoHp.text = "\(playerTwo.hp) HP"
-            NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: #selector(ViewController.attackFinished), userInfo: nil, repeats: false)
-            playerTwoAttackButton.enabled = false
-        }
-        
-        if !playerTwo.isAlive {
-            winnerLabel.text = "Player 2 defeated!!!"
-        }
+    func startGame() {
+        hp = Int(arc4random_uniform(19)) + 1
+        ap = Int(arc4random_uniform(3)) + 1
+        monsterHpLabel.text = "\(hp) HP"
+        knightHpLabel.text = "\(hp) HP"
+        knight = Player(name: "Sir Sir", hp: hp, attackPower: ap)
+        monster = Enemy(name: "ORK", hp: hp, attackPower: ap)
+        game = Game(playerOne: knight, playerTwo: monster, vc: self)
+        winnerLabel.text = "Tap ATTACK!"
     }
     
-    @IBAction func onPlayerTwoAttack(sender: AnyObject) {
-        if playerOne.attack(playerTwo.attackPower) {
-            playerOneHp.text = "\(playerOne.hp) HP"
-            NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: #selector(ViewController.attackFinished), userInfo: nil, repeats: false)
-            playerOneAttackButton.enabled = false
-        }
-        
-        if !playerOne.isAlive {
-            winnerLabel.text = "Player 1 defeated!!!"
-        }
+    @IBAction func onMonsterAttack(sender: AnyObject) {
+        knight.attack(monster.attackPower)
+        game.updateHp(knight)
+    }
+    
+    @IBAction func onKnightAttack(sender: AnyObject) {
+        monster.attack(knight.attackPower)
+        game.updateHp(monster)
     }
 
-    @IBAction func onPlayAgainTapped(sender: AnyObject) {
-       
-        resetGame()
-    }
-    
-    
-    func attackFinished() {
-        playerOneAttackButton.enabled = true
-        playerTwoAttackButton.enabled = true
-    }
-    
-    func resetGame() {
-        winnerLabel.text = "Tap ATTACK!"
-        playerOne = Player(startingHp: 100, attackPower: 20)
-        playerTwo = Player(startingHp: 150, attackPower: 15)
-        playerOneHp.text = "\(playerOne.hp) HP"
-        playerTwoHp.text = "\(playerTwo.hp) HP"
-    }
-   
 }
