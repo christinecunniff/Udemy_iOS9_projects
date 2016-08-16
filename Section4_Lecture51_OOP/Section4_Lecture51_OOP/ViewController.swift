@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     
     var playerOne: Player!
     var playerTwo: Player!
-    var winnerMessage: String?
+    //var winnerMessage: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         
         playerOneHp.text = "\(playerOne.hp) HP"
         playerTwoHp.text = "\(playerTwo.hp) HP"
+        
     }
     
     @IBAction func onPlayerOneAttack(sender: AnyObject) {
@@ -45,11 +46,13 @@ class ViewController: UIViewController {
         
         if !playerOne.isAlive {
             winnerLabel.text = "Player 1 defeated!!!"
+            playAgainButton.hidden = false
         }
     }
 
     @IBAction func onPlayAgainTapped(sender: AnyObject) {
         playAgainButton.hidden = true
+        resetGame()
     }
     
     
@@ -58,5 +61,12 @@ class ViewController: UIViewController {
         playerTwoAttackButton.enabled = true
     }
     
+    func resetGame() {
+        winnerLabel.text = "Tap ATTACK!"
+        playerOne = Player(startingHp: 100, attackPower: 20)
+        playerTwo = Player(startingHp: 150, attackPower: 15)
+        playerOneHp.text = "\(playerOne.hp) HP"
+        playerTwoHp.text = "\(playerTwo.hp) HP"
+    }
    
 }
