@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF0A7B901D63890500CCA18F /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0A7B8F1D63890500CCA18F /* Game.swift */; };
+		EF0A7B921D63891400CCA18F /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0A7B911D63891400CCA18F /* Enemy.swift */; };
 		EF43FBAE1D62008300F276E2 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF43FBAD1D62008300F276E2 /* Character.swift */; };
 		EF5ACF651D5E6250001F51C7 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF5ACF641D5E6250001F51C7 /* Minecraft.ttf */; };
 		EF5ACF671D5E68DE001F51C7 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5ACF661D5E68DE001F51C7 /* Player.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF0A7B8F1D63890500CCA18F /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		EF0A7B911D63891400CCA18F /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		EF43FBAD1D62008300F276E2 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		EF5ACF641D5E6250001F51C7 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
 		EF5ACF661D5E68DE001F51C7 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
@@ -44,7 +48,9 @@
 		EF43FBAF1D62025000F276E2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EF0A7B8F1D63890500CCA18F /* Game.swift */,
 				EF43FBAD1D62008300F276E2 /* Character.swift */,
+				EF0A7B911D63891400CCA18F /* Enemy.swift */,
 				EF5ACF661D5E68DE001F51C7 /* Player.swift */,
 			);
 			name = Classes;
@@ -155,6 +161,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF5ACF671D5E68DE001F51C7 /* Player.swift in Sources */,
+				EF0A7B901D63890500CCA18F /* Game.swift in Sources */,
+				EF0A7B921D63891400CCA18F /* Enemy.swift in Sources */,
 				EF43FBAE1D62008300F276E2 /* Character.swift in Sources */,
 				EF6B730A1D5E4409005B4882 /* ViewController.swift in Sources */,
 				EF6B73081D5E4409005B4882 /* AppDelegate.swift in Sources */,

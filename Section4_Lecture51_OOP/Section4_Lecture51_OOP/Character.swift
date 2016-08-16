@@ -4,7 +4,7 @@ class Character {
     
     private var _hp: Int = 100
     private var _attackPower: Int = 10
-    private var _name = ""
+    private var _name = "Character"
     
     var name: String {
         get {

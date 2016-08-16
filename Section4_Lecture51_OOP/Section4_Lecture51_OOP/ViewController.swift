@@ -3,7 +3,6 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var winnerLabel: UILabel!
-    @IBOutlet weak var playAgainButton: UIButton!
     @IBOutlet weak var playerOneHp: UILabel!
     @IBOutlet weak var playerTwoHp: UILabel!
     @IBOutlet weak var playerOneAttackButton: UIButton!
@@ -33,7 +32,6 @@ class ViewController: UIViewController {
         
         if !playerTwo.isAlive {
             winnerLabel.text = "Player 2 defeated!!!"
-            playAgainButton.hidden = false
         }
     }
     
@@ -46,12 +44,11 @@ class ViewController: UIViewController {
         
         if !playerOne.isAlive {
             winnerLabel.text = "Player 1 defeated!!!"
-            playAgainButton.hidden = false
         }
     }
 
     @IBAction func onPlayAgainTapped(sender: AnyObject) {
-        playAgainButton.hidden = true
+       
         resetGame()
     }
     

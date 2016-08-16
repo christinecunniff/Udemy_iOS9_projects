@@ -1,11 +1,10 @@
 import Foundation
 
-class Player: Character {
-
-    private var _name = "Player"
+class Enemy: Character {
+    
+    private var _name = "Enemy"
     
     override var name: String {
         return _name
     }
-
 }
