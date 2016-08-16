@@ -6,16 +6,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var playAgainButton: UIButton!
     @IBOutlet weak var playerOneHp: UILabel!
     @IBOutlet weak var playerTwoHp: UILabel!
+    @IBOutlet weak var playerOneAttackButton: UIButton!
+    @IBOutlet weak var playerTwoAttackButton: UIButton!
     
-    var playerOne: PlayerOne!
-    var playerTwo: PlayerTwo!
+    var playerOne: Player!
+    var playerTwo: Player!
     var winnerMessage: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        playerOne = PlayerOne(startingHp: 100, attackPower: 10)
-        playerTwo = PlayerTwo(startingHp: 100, attackPower: 10)
+        playerOne = Player(startingHp: 100, attackPower: 20)
+        playerTwo = Player(startingHp: 150, attackPower: 15)
         
         playerOneHp.text = "\(playerOne.hp) HP"
         playerTwoHp.text = "\(playerTwo.hp) HP"
@@ -24,7 +26,8 @@ class ViewController: UIViewController {
     @IBAction func onPlayerOneAttack(sender: AnyObject) {
         if playerTwo.attack(playerOne.attackPower) {
             playerTwoHp.text = "\(playerTwo.hp) HP"
-            NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: #selector(ViewController.onPlayerTwoAttack(_:)), userInfo: nil, repeats: false)
+            NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: #selector(ViewController.attackFinished), userInfo: nil, repeats: false)
+            playerTwoAttackButton.enabled = false
         }
         
         if !playerTwo.isAlive {
@@ -36,7 +39,8 @@ class ViewController: UIViewController {
     @IBAction func onPlayerTwoAttack(sender: AnyObject) {
         if playerOne.attack(playerTwo.attackPower) {
             playerOneHp.text = "\(playerOne.hp) HP"
-            NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: #selector(ViewController.onPlayerOneAttack(_:)), userInfo: nil, repeats: false)
+            NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: #selector(ViewController.attackFinished), userInfo: nil, repeats: false)
+            playerOneAttackButton.enabled = false
         }
         
         if !playerOne.isAlive {
@@ -48,6 +52,11 @@ class ViewController: UIViewController {
         playAgainButton.hidden = true
     }
     
+    
+    func attackFinished() {
+        playerOneAttackButton.enabled = true
+        playerTwoAttackButton.enabled = true
+    }
     
    
 }

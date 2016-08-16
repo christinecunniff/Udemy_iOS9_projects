@@ -278,7 +278,9 @@
                     </view>
                     <connections>
                         <outlet property="playAgainButton" destination="lMP-sF-jkE" id="AOV-gx-C3k"/>
+                        <outlet property="playerOneAttackButton" destination="CHM-Kf-Qbf" id="6bw-tv-CA0"/>
                         <outlet property="playerOneHp" destination="5y6-wZ-wZK" id="W0Q-qW-nL0"/>
+                        <outlet property="playerTwoAttackButton" destination="B0X-kj-yyJ" id="mwv-GB-8iR"/>
                         <outlet property="playerTwoHp" destination="42j-Fn-vec" id="TOe-qR-Vok"/>
                         <outlet property="winnerLabel" destination="H0m-qk-0AH" id="X0O-5f-rWL"/>
                     </connections>
