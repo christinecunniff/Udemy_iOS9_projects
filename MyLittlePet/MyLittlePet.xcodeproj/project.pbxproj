@@ -59,13 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				EF1FF9921D6244C90085CAD5 /* AppDelegate.swift */,
+				EF53D4381D6262C30023D74B /* DragImage.swift */,
+				EF7C31541D64D1AA003FA11E /* MonsterImg.swift */,
 				EF1FF9941D6244C90085CAD5 /* ViewController.swift */,
 				EF1FF9961D6244C90085CAD5 /* Main.storyboard */,
 				EF1FF9991D6244C90085CAD5 /* Assets.xcassets */,
 				EF1FF99B1D6244C90085CAD5 /* LaunchScreen.storyboard */,
 				EF1FF99E1D6244C90085CAD5 /* Info.plist */,
-				EF53D4381D6262C30023D74B /* DragImage.swift */,
-				EF7C31541D64D1AA003FA11E /* MonsterImg.swift */,
 			);
 			path = MyLittlePet;
 			sourceTree = "<group>";
