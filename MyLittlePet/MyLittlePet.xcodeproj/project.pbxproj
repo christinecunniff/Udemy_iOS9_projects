@@ -13,6 +13,7 @@
 		EF1FF99A1D6244C90085CAD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF1FF9991D6244C90085CAD5 /* Assets.xcassets */; };
 		EF1FF99D1D6244C90085CAD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1FF99B1D6244C90085CAD5 /* LaunchScreen.storyboard */; };
 		EF53D4391D6262C30023D74B /* DragImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF53D4381D6262C30023D74B /* DragImage.swift */; };
+		EF7C31551D64D1AA003FA11E /* MonsterImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C31541D64D1AA003FA11E /* MonsterImg.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EF1FF99C1D6244C90085CAD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF1FF99E1D6244C90085CAD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF53D4381D6262C30023D74B /* DragImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragImage.swift; sourceTree = "<group>"; };
+		EF7C31541D64D1AA003FA11E /* MonsterImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterImg.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				EF1FF99B1D6244C90085CAD5 /* LaunchScreen.storyboard */,
 				EF1FF99E1D6244C90085CAD5 /* Info.plist */,
 				EF53D4381D6262C30023D74B /* DragImage.swift */,
+				EF7C31541D64D1AA003FA11E /* MonsterImg.swift */,
 			);
 			path = MyLittlePet;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF7C31551D64D1AA003FA11E /* MonsterImg.swift in Sources */,
 				EF1FF9951D6244C90085CAD5 /* ViewController.swift in Sources */,
 				EF53D4391D6262C30023D74B /* DragImage.swift in Sources */,
 				EF1FF9931D6244C90085CAD5 /* AppDelegate.swift in Sources */,
