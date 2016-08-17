@@ -60,7 +60,7 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="KoI-Br-LFU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="KoI-Br-LFU" customClass="MonsterImg" customModule="MyLittlePet" customModuleProvider="target">
                                 <rect key="frame" x="-95" y="192" width="668" height="367"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="367" id="ieH-uY-sDa"/>
