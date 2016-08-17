@@ -34,7 +34,12 @@ class ViewController: UIViewController {
     }
     
     func itemDroppedOnCharacter(notif: AnyObject) {
-        
+        monsterHappy = true
+        startTimer()    // invalidating the existing timer
+        foodImage.alpha = DIM_ALPHA
+        foodImage.userInteractionEnabled = false
+        heartImage.alpha = DIM_ALPHA
+        heartImage.userInteractionEnabled = false
     }
     
     func startTimer() {
