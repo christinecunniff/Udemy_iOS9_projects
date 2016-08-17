@@ -27,7 +27,8 @@ class ViewController: UIViewController {
         penaltyThreeImg.alpha = DIM_ALPHA
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(itemDroppedOnCharacter), name: "onTargetDropped", object: nil)
-    
+        
+        startTimer()
     }
     
     func itemDroppedOnCharacter(notif: AnyObject) {
@@ -61,7 +62,7 @@ class ViewController: UIViewController {
         }
         
         if penalties >= MAX_PENALTIES {
-            timer.invalidate()
+            gameOver()
         }
     }
     
