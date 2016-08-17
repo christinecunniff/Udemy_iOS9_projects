@@ -142,6 +142,9 @@
                         <outlet property="foodImage" destination="wjb-zs-fQv" id="mlS-6q-JYi"/>
                         <outlet property="heartImage" destination="VxW-Hx-1kx" id="qqv-gk-NVg"/>
                         <outlet property="monsterImage" destination="KoI-Br-LFU" id="FWF-71-i9I"/>
+                        <outlet property="penaltyOneImg" destination="eMB-ni-jJJ" id="g25-hf-kCk"/>
+                        <outlet property="penaltyThreeImg" destination="bOI-NI-REd" id="rwZ-jG-1Mv"/>
+                        <outlet property="penaltyTwoImg" destination="E7E-a7-S7k" id="n8Z-eI-iao"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
