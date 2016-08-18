@@ -9,6 +9,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var penaltyOneImg: UIImageView!
     @IBOutlet weak var penaltyTwoImg: UIImageView!
     @IBOutlet weak var penaltyThreeImg: UIImageView!
+    @IBOutlet weak var playAgainButton: UIButton!
     
     let DIM_ALPHA: CGFloat = 0.2
     let OPAQUE: CGFloat = 1.0
@@ -130,5 +131,20 @@ class ViewController: UIViewController {
         timer.invalidate()
         monsterImage.playDeathAnimation()
         sfxDeath.play()
+        heartImage.hidden = true
+        foodImage.hidden = true
+        playAgainButton.hidden = false
+    }
+    
+    @IBAction func onPlayAgainTapped(sender: AnyObject) {
+        heartImage.hidden = false
+        foodImage.hidden = false
+        playAgainButton.hidden = true
+        monsterImage.playIdleAnimation()
+        penaltyOneImg.alpha = DIM_ALPHA
+        penaltyTwoImg.alpha = DIM_ALPHA
+        penaltyThreeImg.alpha = DIM_ALPHA
+        penalties = 0
+        startTimer()
     }
 }

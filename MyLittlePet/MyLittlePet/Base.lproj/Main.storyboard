@@ -5,6 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Minecraft.ttf">
+            <string>Minecraft</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -20,6 +25,10 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="isQ-mK-uti">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="W4u-cc-Rya"/>
+                                    <constraint firstAttribute="height" constant="600" id="cC7-gQ-XmC"/>
+                                </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="YnK-A5-fGC">
                                 <rect key="frame" x="0.0" y="540" width="600" height="60"/>
@@ -92,6 +101,21 @@
                                     </mask>
                                 </variation>
                             </stackView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70t-xq-WPG">
+                                <rect key="frame" x="120" y="247" width="361" height="105"/>
+                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="361" id="4ig-ZE-Nn4"/>
+                                    <constraint firstAttribute="height" constant="105" id="pP0-6V-I0Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="32"/>
+                                <state key="normal" title="PLAY AGAIN?">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onPlayAgainTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B6I-Qg-VCp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -103,8 +127,10 @@
                             <constraint firstItem="2Ox-mS-gg0" firstAttribute="centerY" secondItem="m2S-KE-n1f" secondAttribute="centerY" id="BCd-Qt-KxP"/>
                             <constraint firstAttribute="trailing" secondItem="YnK-A5-fGC" secondAttribute="trailing" id="HUj-dl-FeG"/>
                             <constraint firstItem="isQ-mK-uti" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IF1-WY-S1T"/>
+                            <constraint firstItem="70t-xq-WPG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IHH-xI-nDQ"/>
                             <constraint firstItem="YnK-A5-fGC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OBf-Wd-iZF"/>
                             <constraint firstItem="rlq-wZ-oHZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oar-x5-usb"/>
+                            <constraint firstItem="70t-xq-WPG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OdZ-9f-O5S"/>
                             <constraint firstItem="rlq-wZ-oHZ" firstAttribute="top" secondItem="m2S-KE-n1f" secondAttribute="bottom" constant="15" id="PyU-h1-aQK"/>
                             <constraint firstItem="KoI-Br-LFU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-115" id="SXD-NH-sFK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="rlq-wZ-oHZ" secondAttribute="trailing" id="Wkm-rl-C59"/>
@@ -113,7 +139,9 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KoI-Br-LFU" secondAttribute="bottom" constant="41" id="Yhl-98-znd"/>
                             <constraint firstItem="rlq-wZ-oHZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZMT-VA-6cG"/>
                             <constraint firstItem="rlq-wZ-oHZ" firstAttribute="top" secondItem="m2S-KE-n1f" secondAttribute="bottom" constant="15" id="aNP-Bx-Pjj"/>
+                            <constraint firstItem="70t-xq-WPG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gcx-Q8-FfQ"/>
                             <constraint firstItem="rlq-wZ-oHZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="n3a-qL-WnP"/>
+                            <constraint firstItem="70t-xq-WPG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sIm-hI-eH5"/>
                             <constraint firstItem="m2S-KE-n1f" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="wnr-p2-9UP"/>
                         </constraints>
                         <variation key="default">
@@ -123,6 +151,8 @@
                                 <exclude reference="ZMT-VA-6cG"/>
                                 <exclude reference="aNP-Bx-Pjj"/>
                                 <exclude reference="n3a-qL-WnP"/>
+                                <exclude reference="OdZ-9f-O5S"/>
+                                <exclude reference="gcx-Q8-FfQ"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -145,6 +175,7 @@
                         <outlet property="penaltyOneImg" destination="eMB-ni-jJJ" id="g25-hf-kCk"/>
                         <outlet property="penaltyThreeImg" destination="bOI-NI-REd" id="rwZ-jG-1Mv"/>
                         <outlet property="penaltyTwoImg" destination="E7E-a7-S7k" id="n8Z-eI-iao"/>
+                        <outlet property="playAgainButton" destination="70t-xq-WPG" id="unH-0e-t0h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
