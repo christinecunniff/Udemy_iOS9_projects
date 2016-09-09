@@ -76,31 +76,6 @@
                                     <constraint firstAttribute="width" constant="668" id="m5c-8B-pxg"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="rlq-wZ-oHZ">
-                                <rect key="frame" x="155" y="116" width="290" height="98"/>
-                                <subviews>
-                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="VxW-Hx-1kx" customClass="DragImage" customModule="MyLittlePet" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="95" height="98"/>
-                                    </imageView>
-                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="wjb-zs-fQv" customClass="DragImage" customModule="MyLittlePet" customModuleProvider="target">
-                                        <rect key="frame" x="195" y="0.0" width="95" height="98"/>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="96" id="iQy-EZ-0X9"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="iQy-EZ-0X9"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=compact" axis="vertical" misplaced="YES" spacing="30">
-                                    <rect key="frame" x="485" y="28" width="96" height="226"/>
-                                    <mask key="constraints">
-                                        <include reference="iQy-EZ-0X9"/>
-                                    </mask>
-                                </variation>
-                            </stackView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70t-xq-WPG">
                                 <rect key="frame" x="120" y="247" width="361" height="105"/>
                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -116,6 +91,34 @@
                                     <action selector="onPlayAgainTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B6I-Qg-VCp"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="rlq-wZ-oHZ">
+                                <rect key="frame" x="108" y="116" width="385" height="98"/>
+                                <subviews>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="VxW-Hx-1kx" customClass="DragImage" customModule="MyLittlePet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="95" height="98"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="potion" translatesAutoresizingMaskIntoConstraints="NO" id="ILv-Pi-GDR" customClass="DragImage" customModule="MyLittlePet" customModuleProvider="target">
+                                        <rect key="frame" x="145" y="0.0" width="95" height="98"/>
+                                    </imageView>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="wjb-zs-fQv" customClass="DragImage" customModule="MyLittlePet" customModuleProvider="target">
+                                        <rect key="frame" x="290" y="0.0" width="95" height="98"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="iQy-EZ-0X9"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="iQy-EZ-0X9"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact" axis="vertical" misplaced="YES" spacing="25">
+                                    <rect key="frame" x="485" y="28" width="96" height="226"/>
+                                    <mask key="constraints">
+                                        <include reference="iQy-EZ-0X9"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -176,6 +179,7 @@
                         <outlet property="penaltyThreeImg" destination="bOI-NI-REd" id="rwZ-jG-1Mv"/>
                         <outlet property="penaltyTwoImg" destination="E7E-a7-S7k" id="n8Z-eI-iao"/>
                         <outlet property="playAgainButton" destination="70t-xq-WPG" id="unH-0e-t0h"/>
+                        <outlet property="potionImage" destination="ILv-Pi-GDR" id="IIk-Ca-AjZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -190,6 +194,7 @@
         <image name="heart" width="95" height="98"/>
         <image name="idle1" width="889" height="615"/>
         <image name="livespanel" width="468" height="137"/>
+        <image name="potion" width="64" height="64"/>
         <image name="skull" width="95" height="98"/>
     </resources>
 </document>

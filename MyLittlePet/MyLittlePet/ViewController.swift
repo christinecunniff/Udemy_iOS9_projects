@@ -6,6 +6,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var monsterImage: MonsterImg!
     @IBOutlet weak var foodImage: DragImage!
     @IBOutlet weak var heartImage: DragImage!
+    @IBOutlet weak var potionImage: DragImage!
     @IBOutlet weak var penaltyOneImg: UIImageView!
     @IBOutlet weak var penaltyTwoImg: UIImageView!
     @IBOutlet weak var penaltyThreeImg: UIImageView!
@@ -25,13 +26,15 @@ class ViewController: UIViewController {
     var sfxDeath: AVAudioPlayer!
     var sfxHeart: AVAudioPlayer!
     var sfxSkull: AVAudioPlayer!
+    var sfxPotion: AVAudioPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         foodImage.dropTarget = monsterImage
         heartImage.dropTarget = monsterImage
-        
+        potionImage.dropTarget = monsterImage
+
         penaltyOneImg.alpha = DIM_ALPHA
         penaltyTwoImg.alpha = DIM_ALPHA
         penaltyThreeImg.alpha = DIM_ALPHA
@@ -44,6 +47,7 @@ class ViewController: UIViewController {
             try sfxDeath = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("death", ofType: "wav")!))
             try sfxHeart = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("heart", ofType: "wav")!))
             try sfxSkull = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("skull", ofType: "wav")!))
+            try sfxPotion = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("potion", ofType: "wav")!))
             
             musicPlayer.prepareToPlay()
             musicPlayer.play()
@@ -52,6 +56,7 @@ class ViewController: UIViewController {
             sfxHeart.prepareToPlay()
             sfxDeath.prepareToPlay()
             sfxSkull.prepareToPlay()
+            sfxPotion.prepareToPlay()
             
         } catch let err as NSError {
             print(err.debugDescription)
@@ -67,10 +72,14 @@ class ViewController: UIViewController {
         foodImage.userInteractionEnabled = false
         heartImage.alpha = DIM_ALPHA
         heartImage.userInteractionEnabled = false
+        potionImage.alpha = DIM_ALPHA
+        potionImage.userInteractionEnabled = false
         
         if currentItem == 0 {
             sfxHeart.play()
-        } else {
+        }  else if currentItem == 2 {
+            sfxPotion.play()
+        } else  if currentItem == 1 {
             sfxBite.play()
         }
     }
@@ -109,18 +118,29 @@ class ViewController: UIViewController {
             }
         }
         
-        let rand = arc4random_uniform(2)
+        let rand = arc4random_uniform(3)
         
         if rand == 0 {
             foodImage.alpha = DIM_ALPHA
             foodImage.userInteractionEnabled = false
+            potionImage.alpha = DIM_ALPHA
+            potionImage.userInteractionEnabled = false
             heartImage.alpha = OPAQUE
             heartImage.userInteractionEnabled = true
-        } else {
+        } else if rand == 1 {
             foodImage.alpha = OPAQUE
             foodImage.userInteractionEnabled = true
             heartImage.alpha = DIM_ALPHA
             heartImage.userInteractionEnabled = false
+            potionImage.alpha = DIM_ALPHA
+            potionImage.userInteractionEnabled = false
+        } else {
+            potionImage.alpha = OPAQUE
+            potionImage.userInteractionEnabled = true
+            heartImage.alpha = DIM_ALPHA
+            heartImage.userInteractionEnabled = false
+            foodImage.alpha = DIM_ALPHA
+            foodImage.userInteractionEnabled = false
         }
         
         currentItem = rand

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF1A38951D835B0B00A19A56 /* potion.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF1A38941D835B0B00A19A56 /* potion.wav */; };
 		EF1FF9931D6244C90085CAD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1FF9921D6244C90085CAD5 /* AppDelegate.swift */; };
 		EF1FF9951D6244C90085CAD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1FF9941D6244C90085CAD5 /* ViewController.swift */; };
 		EF1FF9981D6244C90085CAD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1FF9961D6244C90085CAD5 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF1A38941D835B0B00A19A56 /* potion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = potion.wav; sourceTree = "<group>"; };
 		EF1FF98F1D6244C90085CAD5 /* MyLittlePet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLittlePet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF1FF9921D6244C90085CAD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF1FF9941D6244C90085CAD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,16 +78,25 @@
 				EF1FF9941D6244C90085CAD5 /* ViewController.swift */,
 				EF1FF9961D6244C90085CAD5 /* Main.storyboard */,
 				EF1FF9991D6244C90085CAD5 /* Assets.xcassets */,
+				EFBA5CEB1D65FE3F00A5CD00 /* sounds */,
 				EF1FF99B1D6244C90085CAD5 /* LaunchScreen.storyboard */,
 				EFBA5CE91D65F7E700A5CD00 /* Minecraft.ttf */,
 				EF1FF99E1D6244C90085CAD5 /* Info.plist */,
+			);
+			path = MyLittlePet;
+			sourceTree = "<group>";
+		};
+		EFBA5CEB1D65FE3F00A5CD00 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
 				EF7C31561D64E8F7003FA11E /* bite.wav */,
+				EF1A38941D835B0B00A19A56 /* potion.wav */,
 				EF7C31571D64E8F7003FA11E /* cave-music.mp3 */,
 				EF7C31581D64E8F7003FA11E /* death.wav */,
 				EF7C31591D64E8F7003FA11E /* heart.wav */,
 				EF7C315A1D64E8F7003FA11E /* skull.wav */,
 			);
-			path = MyLittlePet;
+			name = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +163,7 @@
 				EF7C315D1D64E8F7003FA11E /* death.wav in Resources */,
 				EFBA5CEA1D65F7E700A5CD00 /* Minecraft.ttf in Resources */,
 				EF7C315E1D64E8F7003FA11E /* heart.wav in Resources */,
+				EF1A38951D835B0B00A19A56 /* potion.wav in Resources */,
 				EF7C315C1D64E8F7003FA11E /* cave-music.mp3 in Resources */,
 				EF1FF99D1D6244C90085CAD5 /* LaunchScreen.storyboard in Resources */,
 				EF1FF99A1D6244C90085CAD5 /* Assets.xcassets in Resources */,
