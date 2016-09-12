@@ -141,7 +141,6 @@
                             <constraint firstItem="isQ-mK-uti" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Xts-PM-2He"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KoI-Br-LFU" secondAttribute="bottom" constant="41" id="Yhl-98-znd"/>
                             <constraint firstItem="rlq-wZ-oHZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZMT-VA-6cG"/>
-                            <constraint firstItem="rlq-wZ-oHZ" firstAttribute="top" secondItem="m2S-KE-n1f" secondAttribute="bottom" constant="15" id="aNP-Bx-Pjj"/>
                             <constraint firstItem="70t-xq-WPG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gcx-Q8-FfQ"/>
                             <constraint firstItem="rlq-wZ-oHZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="n3a-qL-WnP"/>
                             <constraint firstItem="70t-xq-WPG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sIm-hI-eH5"/>
@@ -152,7 +151,6 @@
                                 <exclude reference="8Vf-hB-UJ8"/>
                                 <exclude reference="Wkm-rl-C59"/>
                                 <exclude reference="ZMT-VA-6cG"/>
-                                <exclude reference="aNP-Bx-Pjj"/>
                                 <exclude reference="n3a-qL-WnP"/>
                                 <exclude reference="OdZ-9f-O5S"/>
                                 <exclude reference="gcx-Q8-FfQ"/>
